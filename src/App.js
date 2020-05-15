@@ -1,0 +1,47 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import Navbar from "./Navbar.js";
+import Inicio from "./Inicio.js";
+import Aplicacion from "./Aplicacion.js";
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      actual : ""
+    }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <HashRouter>
+            <Navbar paginaActual = {this.state.actual}/>
+            {/* envolvemos nuestra aplicación en el Router  */}
+            <Switch>
+              {/* también la envolvemos en el componente Switch */}
+              <Route
+                path="/"
+                render={propiedades => (
+                  <Inicio {...propiedades} />
+                )}
+                exact
+              />
+              <Route
+                path="/app"
+                render={propiedades => (
+                  <Aplicacion {...propiedades} />
+                )}
+                exact
+              />
+              {/* y creamos nuestras rutas */}
+            </Switch>
+          </HashRouter>
+      </div>
+    );
+  }
+}
+
+export default App;

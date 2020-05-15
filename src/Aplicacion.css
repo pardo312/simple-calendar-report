@@ -1,0 +1,33 @@
+.Aplicacion {
+	padding-top: 100px;
+	padding-left: 50px;
+	width: 95%;
+
+	text-align: justify;
+}
+
+.titulo {
+	color: #f67c01;
+}
+
+.autor {
+	padding-left: 85%;
+}
+
+.cita {
+	font-style: italic;
+	padding-left: 15px;
+}
+
+.permiso {
+	padding-bottom: 5px;
+	align-content: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+img {
+	width: 90%;
+}

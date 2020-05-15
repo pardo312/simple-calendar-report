@@ -1,0 +1,19 @@
+.navbar-logo {
+  width: 75px;
+  height: auto;
+  padding-left: 10px;
+}
+
+.navbar {
+	background-color: #f67c01;
+}
+
+.disabled {
+	padding-right: 10px;
+	color: #FFFFFF90;
+}
+
+.active {
+	padding-right: 10px;
+	color: #FFFFFFFF;
+}
