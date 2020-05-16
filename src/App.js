@@ -3,7 +3,7 @@ import './App.css';
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./components/Navbar.js";
 import Inicio from "./components/Inicio.js";
-import Aplicacion from "./Aplicacion.js";
+import Aplicacion from "./components/Aplicacion.js";
 
 class App extends React.Component {
   constructor(props) {

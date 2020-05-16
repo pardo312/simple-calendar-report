@@ -2,12 +2,25 @@
 	padding-top: 100px;
 	padding-left: 50px;
 	width: 95%;
-
+	font-size: 16px;
 	text-align: justify;
 }
 
 .titulo {
 	color: #f67c01;
+}
+
+.titulo2 {
+	color: #f67c01;
+	font-size: 24px;
+}
+
+.textCenter{
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 
 .autor {
@@ -16,10 +29,15 @@
 
 .cita {
 	font-style: italic;
-	padding-left: 15px;
+	padding-left: 80px;
 }
 
 .permiso {
+	padding-bottom: 5px;
+	align-content: center;
+}
+
+.desing{
 	padding-bottom: 5px;
 	align-content: center;
 }

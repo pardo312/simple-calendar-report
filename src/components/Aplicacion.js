@@ -6,6 +6,7 @@ function Aplicacion() {
     <div className="Aplicacion">
       <div className="descripcion">
       	<h2 className="titulo"> Descripción </h2>
+		  <br></br>
       	<p className="cita"> Simple Calendar es un planificador de calendario fuera de línea enormemente personalizable para teléfonos móviles Android diseñado para hacer exactamente lo que una aplicación de calendario personal de Android debería hacer en 2020. ¡Sin funciones complicadas, permisos innecesarios y sin anuncios! </p>
       	<p className="cita"> Ya sea que esté buscando un recordatorio simple de citas móviles o esté organizando eventos únicos o recurrentes, cumpleaños, necesite recordar aniversarios, programar reuniones de negocios, citas o cualquier otra cosa, Simple Calendar, maravilloso planificador de horarios para teléfonos móviles Android, lo hace fácil mantenerse organizado Con una increíble variedad de opciones de personalización, puede personalizar recordatorios de eventos, apariencia de notificaciones y cómo se ve el recordatorio móvil simple. </p>
       	<p className="cita"> El organizador familiar y el organizador familiar de calendario notable y fácil de usar hacen que verificar su próxima agenda, programar reuniones de negocios, eventos y citas sea muy fácil. Recuérdese cualquier agenda que necesite ser recordada. Este recordatorio de widget de calendario 2020 es un notable planificador diario fácil de usar. Incluso puede ver todo como una simple lista de eventos en lugar de en la vista de calendario, para que sepa exactamente lo que está sucediendo en su vida y cómo organizar y planificar su agenda.</p>
@@ -13,6 +14,7 @@ function Aplicacion() {
       </div>
       <div className="features">
       	<h2 className="titulo"> Funcionalidades </h2>
+		  <br></br>	
       	<div className="row">
 	      	<div className="col-md-5">
 		      	<ul>
@@ -35,8 +37,10 @@ function Aplicacion() {
 					</div>
 				</div>
       </div>
+	  <br></br>
       <div className="permisos">
       	<h2 className="titulo"> Permisos </h2>
+		  <br></br>
 		    <div className="row permiso">
 			   	<div className="col-md-6">
 			     	<img src ='../permiso1.png' alt="boot completed"/>
@@ -127,7 +131,58 @@ function Aplicacion() {
 			   		</ul>
 			   	</div>
 		    </div>
+			<div className="row desing">
+			   	<div className="col-md-6">
+			     	<img src ='../permiso9.png' alt="faketouch"/>
+			   	</div>
+			   	<div className="col-md-6">
+			   		<p> Esto no es un permiso sino un requisito de hardware/software, Google Play los usa para filtrar y solo presentar la aplicación a los dispositivos que los cumplan.
+			   		En este caso, permite a los dispositivos que no tienen las capacidades <span className="italic">touchscreen</span> instalar la aplicación. </p>
+			   		<p> Número de dispositivos soportados según Google Play:</p>
+			   		<ul>
+			   			<li> Se requiere <span className="italic">touchscreen</span> y no <span className="italic">faketouch</span>: 1500 </li>
+			   			<li> Se requiere <span className="italic">faketouch</span> y no <span className="italic">touchscreen</span>: 860 </li>
+			   			<li> No se requiere ninguno: 1800 </li>
+			   		</ul>
+			   	</div>
+		    </div>
+		</div>
+		<div className="desing">
+			<h2 className="titulo"> Diseño de UI/UX </h2>
+			<br></br>
+			<div className="row">
+				<div className="col-md-6">
+					<ul>
+							<div className="titulo2 textCenter">Colores</div>
+							<br></br>
+							<p className="textCenter" >
+								Aunque el widget de la aplicacion tiene la posibilidad de cambiar los colores de fondo y de letra, la aplicacion principal no. Sin embargo, los colores
+								principales escogidos son el Naranja(#f67c01) y el Gris(#424242). 
+							</p>
+								<img className="textCenter" style={{width:'60%'}} src ='https://i.imgur.com/oJwCSA4.png' alt="colors"/>
+							<br></br>
+							<p className="textCenter" >
+								Ademas de estos tambien se encuentran los colores de los eventos,rojo(#ec2e2a),azul(#1565c0) y verde(#ec2e2a).Como se puede
+								observar en la siguiente imagen:				
+							</p>
+								<img className="textCenter" src ='https://i.imgur.com/nutEDrB.png' alt="colors"/>
+					</ul>
+				</div>
+				<div className="col-md-6">
+					<ul>
+						
+							<div className="titulo2 textCenter" >Fuentes</div>
+							<br></br>
+							<p className="textCenter">
+								La aplicacion hace uso de una unica fuente <span className="italic">Sans-serif-light</span> para todos lo apartados de 
+								su interfaz. Se incluyen cambios de propiedades a la fuente, como bold o el font size, pero no se incluyen otras familias de fuentes
+							</p>
+							<img className="textCenter" style={{width:'90%'}} src ='https://i.imgur.com/u5hBMLb.png' alt="colors"/>
+					</ul>
+				</div>
+				
 			</div>
+        </div>
 		</div>
   );
 }
