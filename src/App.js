@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
-import Navbar from "./Navbar.js";
-import Inicio from "./Inicio.js";
+import Navbar from "./components/Navbar.js";
+import Inicio from "./components/Inicio.js";
 import Aplicacion from "./Aplicacion.js";
 
 class App extends React.Component {
