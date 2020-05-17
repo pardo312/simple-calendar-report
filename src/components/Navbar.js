@@ -11,7 +11,7 @@ class Navbar extends React.Component {
     return (
       <div className="Navbar">
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
-          <a className="navbar-brand">
+          <div className="navbar-brand">
             <NavLink
               to="/"
             >
@@ -21,7 +21,7 @@ class Navbar extends React.Component {
                 className="navbar-logo"
               />
             </NavLink>
-          </a>
+          </div>
           <button
             className="navbar-toggler" 
             type="button" 
@@ -68,12 +68,12 @@ class Navbar extends React.Component {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    to="/fragmentation"
+                    to="/logica"
                     className={
-                      this.getNavLinkClass("/fragmentation")
+                      this.getNavLinkClass("/logica")
                     }
                   >
-                    Fragmentación
+                    Logica
                   </NavLink>
                 </li>
             </ul>

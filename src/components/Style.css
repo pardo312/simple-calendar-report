@@ -1,17 +1,23 @@
-.Aplicacion {
+.Pagina{
 	padding-top: 100px;
 	padding-left: 50px;
 	width: 95%;
-	font-size: 16px;
+	font-size: 20px;
 	text-align: justify;
 }
 
 .titulo {
 	color: #f67c01;
+	font-size: 40px;
 }
 
 .titulo2 {
 	color: #f67c01;
+	font-size: 28px;
+}
+
+.titulo3 {
+	color: #C8A206;
 	font-size: 24px;
 }
 
@@ -46,6 +52,14 @@
 	font-style: italic;
 }
 
+.acordion {
+	background-color: #302F2F;
+}
+.carta {
+	height:50rem;
+	width: 100%;
+	margin-top:5%;
+}
 img {
 	width: 90%;
 }
