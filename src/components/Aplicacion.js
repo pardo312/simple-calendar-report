@@ -220,8 +220,10 @@ function Aplicacion() {
 							de hoy como podemos observar en las otras vistas.
 							
 						</p>
-
-						<img className="textCenter" style={{ width: '30%', height: '40%' }} src='https://im5.ezgif.com/tmp/ezgif-5-079bb9fe687d.gif' alt="colors" />
+						<video className="textCenter" 	width="600" height="600" autoPlay muted>
+							<source src="https://i.imgur.com/2fyyT67.mp4" type="video/mp4"/>
+							Your browser does not support the video tag.
+						</video>
 					</div>
 				</div>
 			</div>
