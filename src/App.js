@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar.js";
 import Inicio from "./components/Inicio.js";
 import Aplicacion from "./components/Aplicacion.js";
 import Logica from "./components/Logica.js";
-
+import Performance from "./components/Performance.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -41,6 +41,13 @@ class App extends React.Component {
                 path="/logica"
                 render={propiedades => (
                   <Logica {...propiedades} />
+                )}
+                exact
+              />
+              <Route
+                path="/performance"
+                render={propiedades => (
+                  <Performance {...propiedades} />
                 )}
                 exact
               />
