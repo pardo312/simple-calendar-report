@@ -179,7 +179,9 @@ function Aplicacion() {
 
 							</div>
 						</div>
-						<p className="textCenter" style={{ width: '60%' }}>
+						
+					</div>
+					<p className="textCenter" style={{ width: '60%' }}>
 							Este cambio en la funcionalidad de el boton y
 							la posicion confunden al usuario, el cual esperaria que se comportara como se comporta en todas las otras vista.
 							Entendemos que la aplicacion. Entendemos que los desarrolladores quieren mantener la aplicacion simple y 
@@ -191,7 +193,40 @@ function Aplicacion() {
 							<source src="https://i.imgur.com/2fyyT67.mp4" type="video/mp4"/>
 							Your browser does not support the video tag.
 						</video>
-					</div>
+					<div className="row">
+					<div className="titulo2 textCenter" >Problemas y cambios</div>
+					<p className="textCenter" style={{ width: '60%' }}>
+									En cuanto a cambios que realizamos a la aplicacion se encuentran los siguientes: 
+								</p>
+								<div className="titulo3 textCenter" >Antipatron: Non-informative-Message</div>
+							<div className="col-md-5">
+								<div className="titulo3 textCenter" >Before</div>
+									<p className="textCenter" style={{ width: '90%' }}>
+										En el caso de conectividad eventual el usuario no tiene ningun feedback de si la aplicacion
+										esta actualizando o no los calendarios calDAV a la hora de hacer el refresh. 
+										<br></br><br></br>
+										En el pasado
+										la aplicacion solo mostraba este mensaje:
+									</p>
+									<img className="textCenter" style={{ width: '50%' }} src='https://i.imgur.com/Dp8zlUe.png' alt="colors" />
+							</div>
+							<div className="col-md-2">
+								<img className="textCenter" style={{ width: '70%' , marginTop:'30rem'}} src='https://lh3.googleusercontent.com/proxy/lc-nUQPLfeOqj0gD_gbO2rDwlgWgBrZiTlJK2pp5SDWKexKCriRihQlVAco0PdB681ciPFSVNg5tabqkeTHEt2WY4XczWQ9OmR5girj5l_WkV_U8vLe_yol-' alt="colors" />
+							</div>
+						
+							<div className="col-md-5">
+								<div className="titulo3 textCenter" >After</div>
+									<p className="textCenter" style={{ width: '90%' }}>
+										Una vez modificada la aplicacion, esta mira si la conexion a internet esta activa o no.
+										Apartir de esto, si esta conectada muestra el mismo mensaje de siempre de "Actualizando".
+										Sin embargo si no hay conexion se muestra un mensaje informativo que le da informacion al
+										usuario de porque no se actualizan sus calendarios.
+									</p>
+									<img className="textCenter" style={{ width: '50%' }} src='https://i.imgur.com/au2rFv2.png' alt="colors" />
+							</div>
+						
+						
+						</div>
 				</div>
 			</div>
 		</div>
