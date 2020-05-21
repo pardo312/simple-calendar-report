@@ -6,6 +6,7 @@ import Inicio from "./components/Inicio.js";
 import Aplicacion from "./components/Aplicacion.js";
 import Logica from "./components/Logica.js";
 import Performance from "./components/Performance.js";
+import Testing from "./components/Testing.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -41,6 +42,13 @@ class App extends React.Component {
                 path="/logica"
                 render={propiedades => (
                   <Logica {...propiedades} />
+                )}
+                exact
+              />
+              <Route
+                path="/testing"
+                render={propiedades => (
+                  <Testing {...propiedades} />
                 )}
                 exact
               />
