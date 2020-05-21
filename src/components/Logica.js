@@ -196,18 +196,24 @@ function Logica() {
                         
                     </div>
                     <div className="col-md-6">
-                        <div className="titulo2 textCenter" >Dialogs</div>
+                        <div className="titulo2 textCenter" >Fragments</div>
                         <br></br>
-                        <p className="textCenter" style={{ width: '50%' }}>
-                            To-DO
+                        <p className="textCenter" style={{ width: '80%' }}>
+                            Estos fragmentos son los fragmentos con los cuales se navega en la aplicacion. Por ejemplo, 
+                            el weekfragment tiene el control de los botones de ir a las siguiente semana y los botones de ir a la anterior semana,
+                            es como el contenedor de los eventos que hay para esa semana. Ha de notarse que como la vista de eventos no tiene 
+                            un fragmento per se, solo se incluye el fragmento y no el holder del fragmento. 
                         </p>
+                        <img className="textCenter" style={{ width: '50%' }} src='https://i.imgur.com/0quFVJO.png' alt="Fragments" /> 
                     </div>
                     <div className="col-md-6">
-                        <div className="titulo2 textCenter" >Extensions</div>
+                        <div className="titulo2 textCenter" >Helpers</div>
                         <br></br>
-                        <p className="textCenter" style={{ width: '100%' }}>
-                        To-DO
+                        <p className="textCenter" style={{ width: '60%' }}>
+                            Estas clases son como su nombre lo dice una clase de ayuda a otras clases importantes. Se encuentran en estas diferentes
+                            metodos recurrentes que se usan en las otras clases importantes.
                         </p>
+                        <img className="textCenter" style={{ width: '50%' }} src='https://i.imgur.com/6kMF9NV.png' alt="helpers" /> 
                     </div>
                 </div>
             </div>

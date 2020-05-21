@@ -160,7 +160,7 @@ function Aplicacion() {
 								<br></br>
 								<div className="titulo3 textCenter" >Boton cambiar vista</div>
 							</p>
-						<div className="row">
+						<div className="row" >
 							<div className="col-md-5">
 								<p className="textCenter" style={{ width: '60%' }} >
 									En primera instacia esta el boton de cambiar vista el mismo comportamiento para la mayoria de las vistas.
@@ -190,14 +190,14 @@ function Aplicacion() {
 							
 						</p>
 						<video className="textCenter" 	width="600" height="600" autoPlay muted>
-							<source src="https://i.imgur.com/2fyyT67.mp4" type="video/mp4"/>
+							<source src="https://i.imgur.com/2fyyT67.mp4" type="video/mp4" loop/>
 							Your browser does not support the video tag.
 						</video>
+
+					<h2 className="titulo" style={{marginTop: "5rem"}}> Problemas y cambios</h2>
 					<div className="row">
-					<div className="titulo2 textCenter" >Problemas y cambios</div>
-					<p className="textCenter" style={{ width: '60%' }}>
-									En cuanto a cambios que realizamos a la aplicacion se encuentran los siguientes: 
-								</p>
+					
+					<p >En cuanto a cambios que realizamos a la aplicacion se encuentran los siguientes: </p>
 								<div className="titulo3 textCenter" >Antipatron: Non-informative-Message</div>
 							<div className="col-md-5">
 								<div className="titulo3 textCenter" >Before</div>
@@ -224,7 +224,47 @@ function Aplicacion() {
 									</p>
 									<img className="textCenter" style={{ width: '50%' }} src='https://i.imgur.com/au2rFv2.png' alt="colors" />
 							</div>
-						
+							<br></br>
+					<h2 className="titulo3 textCenter">Consistencia de diseño</h2>
+                    <div className="row">
+                        
+                        <div className="col-md-5">
+                            <div className="titulo3 textCenter" >Soft-Lock</div>
+                            <p className="textCenter" style={{ width: '90%' }}>
+                                La aplicacion cuenta con una inconsistencia de diseño en la cual en todas las vistas excepto en la 
+								vista de eventos, si das click en el boton de ir al dia de hoy ubicado en la parte superior.
+								<br></br><br></br>
+								Este te 
+								lleva al dia de hoy y ademas el boton cambia a un boton de cambiar vista para mejorar la experiencia de
+								usuario, sin embargo en la vista de eventos esto no sucede y el boton siempre es el de ir al dia de hoy:
+							</p>
+
+                            <video className="textCenter" width="1000" height="800" autoPlay muted>
+                                <source src="https://i.imgur.com/fhU4yVe.mp4" type="video/mp4" loop/>
+							Your browser does not support the video tag.
+							</video>
+                        </div>
+                        <div className="col-md-2">
+                            <img className="textCenter" style={{ width: '70%', marginTop: '30rem' }} src='https://lh3.googleusercontent.com/proxy/lc-nUQPLfeOqj0gD_gbO2rDwlgWgBrZiTlJK2pp5SDWKexKCriRihQlVAco0PdB681ciPFSVNg5tabqkeTHEt2WY4XczWQ9OmR5girj5l_WkV_U8vLe_yol-' alt="colors" />
+                        </div>
+
+                        <div className="col-md-5">
+                            <div className="titulo3 textCenter" >After</div>
+                            <p className="textCenter" style={{ width: '90%' }}>
+                                Se implementa la funcionalidad que tenian las otras vistas a la vista de ejemplo, sin embargo la implmentacion no fue tan sencilla como se creia.
+								Debido a que la vista de eventos no funciona igual a las demas esta no se actualiza atravez de cambio de dia como las otras. 
+								</p>
+							<video className="textCenter" width="1000" height="800" autoPlay muted loop>
+                                <source src="https://i.imgur.com/8tJACck.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+							</video>
+							<p className="textCenter" style={{ width: '90%' }}>
+							La vista de eventos funciona como un recycler view que se carga una vez y se muestra en pantalla por lo tanto a la hora de quere localizar un evento
+								por medio de codigo no pudimos encontrar una solucion sencilla. dado que en el fragmento de la vista de eventos existe un onscroll listener pudimos
+								realizar el cambio del boton al presionar el boton y el otro cambio cuando el usuario hiciera un scroll en el recycle view. 
+							</p>
+                        </div>
+                    </div>
 						
 						</div>
 				</div>
