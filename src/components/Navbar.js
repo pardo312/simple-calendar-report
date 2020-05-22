@@ -73,7 +73,7 @@ class Navbar extends React.Component {
                       this.getNavLinkClass("/logica")
                     }
                   >
-                    Logica
+                    Código
                   </NavLink>
                 </li>
             </ul>

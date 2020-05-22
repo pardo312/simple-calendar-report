@@ -198,16 +198,21 @@ function Logica() {
                     <div className="col-md-6">
                         <div className="titulo2 textCenter" >Dialogs</div>
                         <br></br>
-                        <p className="textCenter" style={{ width: '50%' }}>
-                            To-DO
+                        <p style={{ width: '90%' }}>
+                            Estos son los diálogos (pequeña ventana) que usa la aplicación para que el usuario ingrese información adicional
+                            o elija entre alguna opciones. 
                         </p>
+                        <br></br>
+                        <img src='../dialogs.png' alt="dialogs" style={{ width: '50%' }}/>
                     </div>
                     <div className="col-md-6">
                         <div className="titulo2 textCenter" >Extensions</div>
                         <br></br>
-                        <p className="textCenter" style={{ width: '100%' }}>
-                        To-DO
+                        <p style={{ width: '90%' }}>
+                            Estas archivos de Kotlin contienen funciones auxiliares para ciertas clases como: Activity, Long, TextView, etc.
                         </p>
+                        <br></br>
+                        <img src="../extensions.png" alt="extensions" style={{ width: '50%' }}/>
                     </div>
                 </div>
             </div>

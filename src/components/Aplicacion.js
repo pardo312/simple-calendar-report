@@ -4,7 +4,6 @@ import './Style.css'
 function Aplicacion() {
 	return (
 		<div className="Pagina">
-
 			<div className="permisos">
 				<h2 className="titulo"> Permisos </h2>
 				<br></br>
@@ -98,19 +97,40 @@ function Aplicacion() {
 						</ul>
 					</div>
 				</div>
-				<div className="row desing">
-					<div className="col-md-6">
-						<img src='../permiso9.png' alt="faketouch" />
+			</div>
+			<div className="librerias">
+				<h2 className="titulo"> Librerías </h2>
+				<div className="row libreria">
+					<div className="col-md-4">
+						<img src='../commons.png' alt="commons" />
 					</div>
-					<div className="col-md-6">
-						<p> Esto no es un permiso sino un requisito de hardware/software, Google Play los usa para filtrar y solo presentar la aplicación a los dispositivos que los cumplan.
-			   		En este caso, permite a los dispositivos que no tienen las capacidades <span className="italic">touchscreen</span> instalar la aplicación. </p>
-						<p> Número de dispositivos soportados según Google Play:</p>
-						<ul>
-							<li> Se requiere <span className="italic">touchscreen</span> y no <span className="italic">faketouch</span>: 1500 </li>
-							<li> Se requiere <span className="italic">faketouch</span> y no <span className="italic">touchscreen</span>: 860 </li>
-							<li> No se requiere ninguno: 1800 </li>
-						</ul>
+					<div className="col-md-8">
+						<p> Es una librería que contienen algunas funciones auxiliares y recursos compartido de uso exclusivo para las
+						aplicaciones de la suite de <span className="italic">simple apps</span>. <a href="https://github.com/SimpleMobileTools/Simple-Commons" target="blank">Repo Github</a></p>
+					</div>
+				</div>
+				<div className="row libreria">
+					<div className="col-md-4">
+						<img src='../joda.png' alt="joda" />
+					</div>
+					<div className="col-md-8">
+						<p> Librería para el manejo de fechas. <a href="https://www.joda.org/joda-time/" target="blank">Documentación</a></p>
+					</div>
+				</div>
+				<div className="row libreria">
+					<div className="col-md-4">
+						<img src='../multidex.png' alt="multidex" />
+					</div>
+					<div className="col-md-8">
+						<p> Librería que permite que aplicación que superan los 65536 métodos compilen y lean varios archivos DEX. <a href="https://developer.android.com/studio/build/multidex?hl=es#about" target="blank">Más...</a></p>
+					</div>
+				</div>
+				<div className="row libreria">
+					<div className="col-md-4">
+						<img src='../room.png' alt="room" />
+					</div>
+					<div className="col-md-8">
+						<p> Librería que permite acceder a la base de datos local sin problemas. <a href="https://developer.android.com/jetpack/androidx/releases/room" target="blank">Más...</a></p>
 					</div>
 				</div>
 			</div>

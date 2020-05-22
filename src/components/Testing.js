@@ -76,14 +76,30 @@ function Testing() {
                     </div>
 
                     <div className="col-md-12">
-                        <h2 className="titulo"> Conclusiones</h2> 
+                        <h2 className="titulo2"> Conclusiones</h2> 
                         <br></br>
                         <p className="textCenter" style={{ width: '80%' }}>
                         Como se pudieron observar en los test, la aplicacion esta bien diseñada y los desarroladores tuvieron en cuenta cada aspecto de la aplicacion
                         que pudiera generar un error. Probablemente estos desarrolladores realizaron pruebas como las que se realizaron en este informe e identificaron
                         errores en su aplicacion para poder solucionarlos. 
                         </p>
-                        
+                    </div>
+                </div>
+            </div>
+            <div className="lint">
+                <h2 className="titulo textCenter">Android Lint</h2>
+                <p> Los resultados completos del lint se encuentran <a href="../lint-results.html" target="blank">aquí</a>. De este test se pueden resaltar lo siguiente:</p>
+                <div className="row">
+                    <div className="col-md-6">
+                        <img src="../security.png" alt="security" />
+                        <p className="overdraw">El BroadcastReceiver encargo de estar pendiente cuando el celular termina el proceso de booteo arroja una alerta de seguridad.
+                        Esta debido que no se verifica que el intent que recibe sea el esperado, por lo tanto, otra aplicación podría enviar un intent falso que genere 
+                        comportamientos indeseados en la aplicación. Apesar de esto, no es mu factible que esto ocurra pues el tipo de intent que se recibe solo puede ser enviado
+                        por el sistema.</p>
+                    </div>
+                    <div className="col-md-6">
+                        <img src="../resources.png" alt="resources" />
+                        <p className="overdraw">Se encontraron 25 recursos que nunca son usados, por lo tanto, podrían ser eliminados para mejorar el performance de la aplicación.</p>
                     </div>
                 </div>
             </div>
