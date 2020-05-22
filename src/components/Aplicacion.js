@@ -285,7 +285,8 @@ function Aplicacion() {
 							</p>
                         </div>
                     </div>
-						
+                    <h2 className="titulo2 textCenter">Pull request</h2>
+						<img className="textCenter" style={{ width: '70%' }} src='https://i.imgur.com/0R2n09P.png-' alt="colors" />
 						</div>
 				</div>
 			</div>
